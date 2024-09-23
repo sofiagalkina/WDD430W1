@@ -14,5 +14,5 @@ class Greeter {
   }
 }
 
-const greeter = new Greeter('Hello');
+const greeter = new Greeter('Hello, this message was generated from the app.ts file');
 greeter.greet();
