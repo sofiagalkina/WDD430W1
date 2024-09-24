@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
      "build:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "build:ts": "npx tsc"
-    
+     "build:ts": "tsc app.ts --outFile app.js",
+     "build": "npm run build:css && npm run build:ts",
+     "deploy": "npm run build && gh-pages -d . -s src/index.html"
   },
   "keywords": [],
   "author": "",
