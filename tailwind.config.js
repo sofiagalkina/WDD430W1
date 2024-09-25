@@ -1,9 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}', // This ensures Tailwind looks in your TypeScript and JS files
+  ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
+
 
