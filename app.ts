@@ -1,4 +1,3 @@
-// src/app.ts
 class Greeter {
   private message: string;
 
